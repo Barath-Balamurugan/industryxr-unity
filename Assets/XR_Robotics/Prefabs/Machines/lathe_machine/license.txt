@@ -1,0 +1,11 @@
+Model Information:
+* title:	Lathe Machine
+* source:	https://sketchfab.com/3d-models/lathe-machine-ff2240fac41d42fc84eef90a0e241825
+* author:	ridhobahri (https://sketchfab.com/ridhobahri)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Lathe Machine" (https://sketchfab.com/3d-models/lathe-machine-ff2240fac41d42fc84eef90a0e241825) by ridhobahri (https://sketchfab.com/ridhobahri) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
