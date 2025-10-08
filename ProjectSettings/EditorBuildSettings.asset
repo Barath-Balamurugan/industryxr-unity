@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: "Assets/Samples/Meta XR Interaction \u200BSDK/68.0.1/Example Scenes/MainMenu.unity"
     guid: dd0807924bb722949a5a9fbba58fcc8f
-  - enabled: 1
+  - enabled: 0
     path: Assets/XR_Robotics/Scenes/Tutorial_Scene.unity
     guid: e45674d7410ace84ea642c821ee8bec0
   - enabled: 1
