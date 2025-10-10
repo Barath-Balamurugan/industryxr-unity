@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading;
 using UnityEngine;
 using System.Linq;
+using System.Collections.Generic;
 
 [Serializable]
 public class Pair {
@@ -63,7 +64,7 @@ public class Listener : MonoBehaviour
                     if (logParsedPairs)
                     {
                         if (payload?.pairs != null && payload.pairs.Length > 0)
-{
+                        {
                             var line = string.Join(" | ",
                                 payload.pairs.Select(p =>
                                 {
@@ -71,7 +72,7 @@ public class Listener : MonoBehaviour
                                     return $"{p.cube_label}: {p.distance_m}";
                                 }));
 
-                            Debug.Log(line);
+                            // Debug.Log(line);
                         }
                     }
 
@@ -100,5 +101,10 @@ public class Listener : MonoBehaviour
         running = false;
         try { client?.Close(); } catch { }
         try { t?.Join(50); } catch { }
+    }
+
+    public IReadOnlyList<Pair> GetLatestPairs()
+    {
+        return Latest?.pairs ?? Array.Empty<Pair>();
     }
 }
