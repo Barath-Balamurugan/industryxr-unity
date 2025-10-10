@@ -83,11 +83,12 @@ public class SpawnFromDetect : MonoBehaviour
         {
             go = Instantiate(prefab, Vector3.zero, Quaternion.identity, parent);
             _spawned[key] = go;
-            Debug.Log($"Spawned {key} prefab");
+            // Debug.Log($"Spawned {key} prefab");
         }
 
         // Desired world position: reference.position + (reference-space direction) * meters
         float meters = p.distance_m > 0f ? p.distance_m : fallbackMeters;
+        float units = meters * metersToUnity;
         Vector3 worldDir = reference.TransformDirection(direction.normalized);
         Vector3 targetPos = reference.position + worldDir * meters;
 
