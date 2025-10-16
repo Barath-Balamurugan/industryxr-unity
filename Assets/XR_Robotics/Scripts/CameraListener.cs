@@ -7,7 +7,7 @@ using System.Threading;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CameraListener : MonoBehaviour
+public class MjpegTcpClient : MonoBehaviour
 {
     [Header("Connection")]
     public string host = "127.0.0.1"; // <-- set to your Mac's IP if remote
