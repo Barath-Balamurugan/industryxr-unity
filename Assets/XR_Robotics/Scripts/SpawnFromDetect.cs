@@ -94,11 +94,11 @@ public class SpawnFromDetect : MonoBehaviour
 
         if (!updateContinuously || LerpSpeed <= 0f)
         {
-            go.transform.position = targetPos;
+            go.transform.position = new Vector3(targetPos.x, 1, targetPos.z);
         }
         else
         {
-            go.transform.position = Vector3.Lerp(go.transform.position, targetPos, 1f - Mathf.Exp(-LerpSpeed * Time.deltaTime));
+            go.transform.position = Vector3.Lerp(go.transform.position, new Vector3(targetPos.x, 1, targetPos.z), 1f - Mathf.Exp(-LerpSpeed * Time.deltaTime));
         }
     }
     

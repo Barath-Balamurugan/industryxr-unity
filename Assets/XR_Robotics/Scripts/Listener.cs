@@ -69,6 +69,7 @@ public class Listener : MonoBehaviour
                                 payload.pairs.Select(p =>
                                 {
                                     // var mStr = p.distance_m > 0 ? $"{p.distance_m:F3} m" : $"{p.distance_px:F1} px";
+                                    Debug.Log($"{p.cube_label}: {p.distance_m}");
                                     return $"{p.cube_label}: {p.distance_m}";
                                 }));
 
