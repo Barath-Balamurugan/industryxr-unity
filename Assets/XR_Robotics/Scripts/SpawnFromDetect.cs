@@ -6,7 +6,7 @@ using System.Linq;
 public class SpawnFromDetect : MonoBehaviour
 {
     [Header("Data source")]
-    public Listener listener;        
+    public TCPClient listener;        
 
     [Header("Reference")]
     public Transform reference;                
@@ -34,7 +34,7 @@ public class SpawnFromDetect : MonoBehaviour
 
     void Awake()
     {
-        listener = FindAnyObjectByType<Listener>();
+        listener = FindAnyObjectByType<TCPClient>();
     }
 
     void Update()
